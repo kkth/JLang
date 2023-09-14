@@ -11,7 +11,7 @@ public class BfsDfs {
     }
 
 
-    ArrayList bfs(TreeNode root){
+    ArrayList<Integer> bfs(TreeNode root){
         if(root == null)
             return null;
 
@@ -33,7 +33,7 @@ public class BfsDfs {
         return theList;
     }
 
-    ArrayList dfs (TreeNode root){
+    ArrayList<Integer> dfs (TreeNode root){
         if(root == null)
             return null;
 
