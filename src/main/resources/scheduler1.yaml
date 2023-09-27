@@ -1,0 +1,357 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2023-09-13T04:10:46Z"
+  generateName: nightly-v6-58-d9582ac-1694577909-scheduler-7996ff48b5-
+  labels:
+    app: scheduler
+    pod-template-hash: 7996ff48b5
+    release: nightly-v6-58-d9582ac-1694577909
+  name: nightly-v6-58-d9582ac-1694577909-scheduler-7996ff48b5-stmx4
+  namespace: nightly
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: nightly-v6-58-d9582ac-1694577909-scheduler-7996ff48b5
+    uid: 30e253cc-3c19-4ca5-8d5a-c8078d14d083
+  resourceVersion: "2290232640"
+  uid: a644e75f-9f49-4102-8a08-bd55b26b657d
+spec:
+  containers:
+  - command:
+    - /bin/bash
+    - -c
+    - cd /ads-forecast/scheduler/ && su ads -c "cd /ads-forecast/scheduler/ && nohup
+      /ads-forecast/scheduler/AfScheduler --env prd --conf=/ads-forecast/scheduler/conf/scheduler.json
+      --check=false >> log/run_scheduler.log 2>&1 &" & /keep_running.sh
+    env:
+    - name: RUNTIME_ENVIRONMENT
+      value: aws
+    - name: ENV
+      value: prd
+    - name: S3_PREFIX
+      value: vir
+    - name: POD_IP
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: status.podIP
+    - name: NODE_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: spec.nodeName
+    - name: POD_NAME
+      valueFrom:
+        fieldRef:
+          apiVersion: v1
+          fieldPath: metadata.name
+    image: arti.freewheel.tv/af/forecast/engine/scheduler/v6.58:d9582ac
+    imagePullPolicy: Always
+    lifecycle:
+      postStart:
+        exec:
+          command:
+          - /bin/bash
+          - -c
+          - |
+            sh /package/local_postcheck.sh > /package/postcheck_log;   if [ -f /package/copy_log.sh ]; then export >> /etc/profile.d/pod_env.sh; crond; { crontab -l; echo "0 4 * * * . /etc/profile.d/pod_env.sh; sh /package/copy_log.sh 1>/dev/null 2>&1"; echo "*/5 * * * * ls -t /ads-forecast/data/repa_decompressed/.repa-*|awk 'NR>=4' |xargs rm -rf >> /var/log/cron.log 2>&1"; echo "0 * * * * . /etc/profile.d/pod_env.sh; sh /package/download_xtr_files.sh >> /tmp/download_xtr_files.log 2>&1";} | crontab -; fi;
+      preStop:
+        exec:
+          command:
+          - /bin/bash
+          - -c
+          - sh /package/pre_stop.sh aws scenario
+    name: scheduler
+    ports:
+    - containerPort: 1088
+      protocol: TCP
+    resources:
+      limits:
+        cpu: "2"
+        memory: 4G
+      requests:
+        cpu: "1"
+        memory: 2G
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /ads-forecast/scheduler/data/exchange
+      name: af-exchange
+    - mountPath: /ads-forecast/scheduler/data/exchange/plan
+      name: plan-scenario
+    - mountPath: /ads-forecast/scheduler/data/nightly
+      name: result
+    - mountPath: /ads-forecast/scheduler/debug
+      name: debug
+    - mountPath: /ads-forecast/scheduler/data/exchange/counter
+      name: counter
+    - mountPath: /ads-forecast/scheduler/log
+      name: nightly-v6-58-d9582ac-1694577909-shared-data
+    - mountPath: /ads-forecast/scheduler/conf
+      name: app-config
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-q8bq2
+      readOnly: true
+  - command:
+    - /bin/bash
+    - -c
+    - filebeat -c /etc/filebeat/filebeat.yaml -path.home /usr/share/filebeat -path.config
+      /etc/filebeat -path.data /tmp/lib/filebeat -path.logs /tmp/log/filebeat -strict.perms=false
+    image: arti.freewheel.tv/pqm/elk/filebeat:6.8.13
+    imagePullPolicy: Always
+    name: filebeat
+    resources:
+      limits:
+        cpu: 200m
+        memory: 200Mi
+      requests:
+        cpu: 100m
+        memory: 100Mi
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /etc/filebeat/
+      name: nightly-v6-58-d9582ac-1694577909-filebeat-config
+    - mountPath: /ads-forecast/scheduler/log
+      name: nightly-v6-58-d9582ac-1694577909-shared-data
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-q8bq2
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  initContainers:
+  - command:
+    - /bin/sh
+    - -c
+    - until /opt/bitnami/kafka/bin/zookeeper-shell.sh nightly-v6-58-d9582ac-1694577909-zookeeper:2181
+      ls /; do echo "Waiting for zookeeper ok"; sleep 2; done; echo "zookeeper is
+      ok"
+    image: arti.freewheel.tv/af/forecast/engine/kafka/kafka:2.8.1-debian-10-r73
+    imagePullPolicy: IfNotPresent
+    name: wait-zookeeper-port
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-q8bq2
+      readOnly: true
+  - command:
+    - bin/sh
+    - -c
+    - '/bin/update_secret /tmp/placeholderconfig/monitor-prd.json /ads-forecast/scheduler/conf/monitor-prd.json
+      && /bin/update_secret /tmp/placeholderconfig/scheduler.json /ads-forecast/scheduler/conf/scheduler.json
+      prd-oltp-ondemandforecast-scheduler-tvp-mysql-ro_username prd-oltp-ondemandforecast-scheduler-tvp-mysql-ro_password
+      prd-oltp-nightlyforecast-scheduler-tvp-mysql-ro_username prd-oltp-nightlyforecast-scheduler-tvp-mysql-ro_password
+      pqm-password af-secret_monitor-db-username af-secret_monitor-db-password '
+    env:
+    - name: prd-oltp-ondemandforecast-scheduler-tvp-mysql-ro_username
+      valueFrom:
+        secretKeyRef:
+          key: username
+          name: prd-oltp-ondemandforecast-scheduler-tvp-mysql-ro
+    - name: prd-oltp-ondemandforecast-scheduler-tvp-mysql-ro_password
+      valueFrom:
+        secretKeyRef:
+          key: password
+          name: prd-oltp-ondemandforecast-scheduler-tvp-mysql-ro
+    - name: prd-oltp-nightlyforecast-scheduler-tvp-mysql-ro_username
+      valueFrom:
+        secretKeyRef:
+          key: username
+          name: prd-oltp-ondemandforecast-scheduler-tvp-mysql-ro
+    - name: prd-oltp-nightlyforecast-scheduler-tvp-mysql-ro_password
+      valueFrom:
+        secretKeyRef:
+          key: password
+          name: prd-oltp-nightlyforecast-scheduler-tvp-mysql-ro
+    - name: pqm-password
+      valueFrom:
+        secretKeyRef:
+          key: pqm-password
+          name: af-secret
+    - name: af-secret_monitor-db-username
+      valueFrom:
+        secretKeyRef:
+          key: monitor-db-username
+          name: af-secret
+    - name: af-secret_monitor-db-password
+      valueFrom:
+        secretKeyRef:
+          key: monitor-db-password
+          name: af-secret
+    image: arti.freewheel.tv/ops/sre/awsgov/sealed_secret_init
+    imagePullPolicy: Always
+    name: secrets-updater
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /tmp/placeholderconfig
+      name: scheduler-config
+    - mountPath: /ads-forecast/scheduler/conf
+      name: app-config
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-q8bq2
+      readOnly: true
+  nodeName: ip-10-205-113-39.ec2.internal
+  nodeSelector:
+    nodeRole: nightly-v6-56-a0d5bdb-scheduler
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 504
+  serviceAccount: nightly-v6-58-d9582ac-1694577909-scheduler-serviceaccount
+  serviceAccountName: nightly-v6-58-d9582ac-1694577909-scheduler-serviceaccount
+  terminationGracePeriodSeconds: 4000
+  tolerations:
+  - effect: NoSchedule
+    key: groupName
+    operator: Equal
+    value: forecast
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: counter
+    persistentVolumeClaim:
+      claimName: nightly-v6-58-d9582ac-1694577909-counter
+  - name: af-exchange
+    persistentVolumeClaim:
+      claimName: nightly-v6-58-d9582ac-1694577909-af-exchange
+  - name: plan-scenario
+    persistentVolumeClaim:
+      claimName: nightly-v6-58-d9582ac-1694577909-plan-scenario
+  - name: result
+    persistentVolumeClaim:
+      claimName: nightly-v6-58-d9582ac-1694577909-result
+  - name: debug
+    persistentVolumeClaim:
+      claimName: nightly-v6-58-d9582ac-1694577909-scheduler-log
+  - configMap:
+      defaultMode: 420
+      items:
+      - key: scheduler.json
+        path: scheduler.json
+      - key: monitor.json
+        path: monitor.json
+      - key: monitor.json
+        path: monitor-prd.json
+      name: nightly-v6-58-d9582ac-1694577909-scheduler-configmap
+    name: scheduler-config
+  - emptyDir: {}
+    name: app-config
+  - configMap:
+      defaultMode: 420
+      items:
+      - key: filebeat-prd.yaml
+        path: filebeat.yaml
+      name: nightly-v6-58-d9582ac-1694577909-filebeat-config
+    name: nightly-v6-58-d9582ac-1694577909-filebeat-config
+  - emptyDir: {}
+    name: nightly-v6-58-d9582ac-1694577909-shared-data
+  - name: kube-api-access-q8bq2
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-09-13T04:12:43Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-09-13T04:14:05Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-09-13T04:14:05Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-09-13T04:12:14Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: containerd://250a7a23bd150c1b22ce91a7e56bf8599c84f9ade27fdbfc8ecc4b00e7111d4b
+    image: arti.freewheel.tv/pqm/elk/filebeat:6.8.13
+    imageID: arti.freewheel.tv/pqm/elk/filebeat@sha256:b27a4a7bfb1584da12a86e26f9d61c061801d3e69a6dd118a355c2209812619b
+    lastState: {}
+    name: filebeat
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2023-09-13T04:14:04Z"
+  - containerID: containerd://f5b5a7d197e9bc1eb4d0eb3d47bcad80f998152ddc959c899142d93184f85b97
+    image: arti.freewheel.tv/af/forecast/engine/scheduler/v6.58:d9582ac
+    imageID: arti.freewheel.tv/af/forecast/engine/scheduler/v6.58@sha256:da6b8e78c301b168eab3b2b7698228a9b57c05d2db629ae587a50f9465092b88
+    lastState: {}
+    name: scheduler
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2023-09-13T04:13:14Z"
+  hostIP: 10.205.113.39
+  initContainerStatuses:
+  - containerID: containerd://cb9ae896ce913ae89e8e8047e1cc8e0eb9b0786a56da6d0562bb60da8bee2c38
+    image: arti.freewheel.tv/af/forecast/engine/kafka/kafka:2.8.1-debian-10-r73
+    imageID: arti.freewheel.tv/af/forecast/engine/kafka/kafka@sha256:f02d8e2cce245d240b6228ae822422041922071034c17e7b3a9646968c80499b
+    lastState: {}
+    name: wait-zookeeper-port
+    ready: true
+    restartCount: 0
+    state:
+      terminated:
+        containerID: containerd://cb9ae896ce913ae89e8e8047e1cc8e0eb9b0786a56da6d0562bb60da8bee2c38
+        exitCode: 0
+        finishedAt: "2023-09-13T04:12:40Z"
+        reason: Completed
+        startedAt: "2023-09-13T04:12:39Z"
+  - containerID: containerd://30bde0f5a1c5fdb1f1860955c0332c9fd712ffffb52cbd89c1638ddc6c63e7c9
+    image: arti.freewheel.tv/ops/sre/awsgov/sealed_secret_init:latest
+    imageID: arti.freewheel.tv/ops/sre/awsgov/sealed_secret_init@sha256:92d17563bee4dbff4f62909f083b1b5fca8e3febc6e6469f1e3be95d3db16bb6
+    lastState: {}
+    name: secrets-updater
+    ready: true
+    restartCount: 0
+    state:
+      terminated:
+        containerID: containerd://30bde0f5a1c5fdb1f1860955c0332c9fd712ffffb52cbd89c1638ddc6c63e7c9
+        exitCode: 0
+        finishedAt: "2023-09-13T04:12:42Z"
+        reason: Completed
+        startedAt: "2023-09-13T04:12:42Z"
+  phase: Running
+  podIP: 10.205.112.161
+  podIPs:
+  - ip: 10.205.112.161
+  qosClass: Burstable
+  startTime: "2023-09-13T04:12:14Z"
