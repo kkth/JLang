@@ -58,7 +58,6 @@ public class TaskScheduler {
                        queue.add(children.get(j));
                    }
                 }
-
             }
 
             theTasks.add(curLayer);
