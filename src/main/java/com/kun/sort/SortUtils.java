@@ -1,5 +1,7 @@
 package com.kun.sort;
 
+import java.util.Arrays;
+
 public class SortUtils {
     public static int[] generate(int low, int high, int count){
         int[] ret = new int[count];
@@ -13,4 +15,8 @@ public class SortUtils {
     public static int[] generate(int count){
         return generate(0,100,count);
     }
+    public static void print(int[] nums){
+        System.out.println(Arrays.toString(nums));
+    }
 }
+

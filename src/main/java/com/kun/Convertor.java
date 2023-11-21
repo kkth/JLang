@@ -9,13 +9,30 @@ import com.google.gson.JsonParser;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class Convertor {
     public static void main(String[] args) throws IOException {
-        while(true) {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            String input = reader.readLine();
-            System.out.println(toPrettyFormat(convert(input)));
+        if(args.length == 1) {
+            String  input = args[0];
+            try {
+                System.out.println(convert(input));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }else if(args.length == 0){
+            while (true) {
+                BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+                String input = reader.readLine();
+                try {
+                    System.out.println(toPrettyFormat(convert(input)));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }else{
+            System.out.println("No input (read from stdin) or input single string to be parsed.");
+            System.exit(0);
         }
     }
     static String convert(String s){
