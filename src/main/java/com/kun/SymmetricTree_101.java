@@ -1,6 +1,5 @@
 package com.kun;
 
-import sun.util.resources.cldr.ta.CurrencyNames_ta;
 
 import java.util.*;
 
