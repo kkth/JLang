@@ -73,7 +73,6 @@ public class ClosedStrings_1657 {
             }
 
             //substitute
-            //
             for(List<String> pair: charPairs){
                 char c1 = pair.get(0).toCharArray()[0];
                 char c2 = pair.get(1).toCharArray()[0];

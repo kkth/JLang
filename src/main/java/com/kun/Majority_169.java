@@ -1,5 +1,6 @@
 package com.kun;
 
+import java.util.Stack;
 import java.util.jar.JarEntry;
 
 public class Majority_169 {
@@ -9,8 +10,11 @@ public class Majority_169 {
 
         int[] nums = new int[]{1,2,1,2,1,2,1};
         System.out.println(majority169.getLocalMajority(nums,0,nums.length-1));
-         nums = new int[]{1,2,1,1,2,2,1};
+        System.out.println(majority169.majorityElement(nums));
+
+        nums = new int[]{1,2,1,1,2,2,1};
         System.out.println(majority169.getLocalMajority(nums,0,nums.length-1));
+        System.out.println(majority169.majorityElement(nums));
     }
 
 
@@ -47,6 +51,24 @@ public class Majority_169 {
 
         }
 
+    }
+
+    public int majorityElement(int[] nums) {
+        Stack<Integer> stack = new Stack<>();
+        for(int n: nums){
+            if(stack.isEmpty()){
+                stack.add(n);
+            }else{
+                Integer top = stack.peek();
+                if(top != n){
+                   stack.pop();
+                }else{
+                    stack.add(n);
+                }
+            }
+        }
+
+        return stack.peek();
     }
 
 }

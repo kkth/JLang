@@ -14,6 +14,9 @@ public class Range_sum_938 {
         System.out.println(rangeSum938.rangeSumBST(root2, 6, 10));
     }
 
+    /*
+        Traverse the tree by in-order
+     */
     public int rangeSumBST(TreeNode root, int low, int high) {
         int sum = 0;
         if (root == null)
