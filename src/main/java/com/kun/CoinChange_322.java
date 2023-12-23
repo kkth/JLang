@@ -16,25 +16,23 @@ public class CoinChange_322 {
         if(amount <coins[0])
             return  -1;
 
-        //How many types
-        int coinTypes = coins.length;
         int[] dp = new int[amount+1];
         dp[0] = 0;
         for(int i = 1;i<=amount;i++){
-            //Set current amount as invalid
+            //Set current amount as invalid by default
             dp[i] = -1;
             for(int coin: coins){
+                //This is the coin value itself!
                 if(coin == i){
-                    //This is the coin value itself!
                     dp[i] = 1;
                     break;
                 }else {
-                    //Only look back valid amount
+                    //Look back, remember to check it's a valid amount (remain value >=0)
                     if (i-coin >=0) {
                         int prevCount = dp[i - coin];
                         //Previous amount is valid
                         if (prevCount != -1) {
-                            if (dp[i] == -1) { //Not set yet
+                            if (dp[i] == -1) { //Current count is not set yet
                                 dp[i] = prevCount + 1;
                             } else if (prevCount + 1 < dp[i]) {//Get a solution with less coins
                                 dp[i] = prevCount + 1;

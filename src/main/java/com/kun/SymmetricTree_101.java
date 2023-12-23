@@ -27,7 +27,7 @@ public class SymmetricTree_101 {
     }
     public boolean isSymmetric(TreeNode root) {
         /*
-            Dqeue does not support null value, a class used to wrap
+            Deque does not support null value, a class used to wrap
             TreeNode so that we can support both actual node and node
             does not exist
          */

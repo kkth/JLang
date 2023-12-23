@@ -19,8 +19,8 @@ public class ValidParenth_20 {
             if(stack.isEmpty()) {
                 stack.push(Character.toString(c));
             }else{
-                String stop = stack.peek();
-                if(stop.equals("{") && c=='}' || stop.equals("(") && c ==')' || stop.equals("[") && c==']'){
+                String sTop = stack.peek();
+                if(sTop.equals("{") && c=='}' || sTop.equals("(") && c ==')' || sTop.equals("[") && c==']'){
                     stack.pop();
                 }else{
                     stack.push(Character.toString(c));

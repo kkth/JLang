@@ -16,18 +16,19 @@ public class LongestSubStrWODuplicate_3 {
         if(s == null || s.isEmpty()){
             return 0;
         }
-        int maxLen = -1, lAtMax = -1, rAtMax = -1;
-        Map<Integer,List<List<Integer>>> records = new HashMap<>();
+        int maxLen = -1, _lAtMax = -1, _rAtMax = -1;
+        Map<Integer,List<List<Integer>>> _records = new HashMap<>();
 
 
         int l = 0;
         Set<String> setsInWindow = new HashSet<>();
         for(int i = 0;i<s.length();i++){
             String cur = s.substring(i,i+1);
-            //Found it
+            //Found duplicated character in current window!
             if(setsInWindow.contains(cur)){
                while(true) {
-                   //Remove any character before remove the duplicated one
+                   //The left character of duplicated pair is next to the new boundary
+                   //So we must remove any character before the duplicated one as well
                    String toBeRemoved = s.substring(l, l + 1);
                    setsInWindow.remove(toBeRemoved);
                    l++;
@@ -43,26 +44,26 @@ public class LongestSubStrWODuplicate_3 {
             //Keep all the same length when >= is used here
             if(i-l+1 >= maxLen){
                 maxLen = i-l+1;
-                lAtMax = l;
-                rAtMax = i;
+                _lAtMax = l;
+                _rAtMax = i;
 
-                List<Integer> curWindow = new ArrayList<>();
-                curWindow.add(lAtMax);
-                curWindow.add(rAtMax);
+                List<Integer> _curWindow = new ArrayList<>();
+                _curWindow.add(_lAtMax);
+                _curWindow.add(_rAtMax);
 
-                List<List<Integer>> value = records.get(maxLen);
-                if(value == null){
-                    value = new ArrayList<>();
-                    value.add(curWindow);
-                    records.put(maxLen,value);
+                List<List<Integer>> _windowList = _records.get(maxLen);
+                if(_windowList == null){
+                    _windowList = new ArrayList<>();
+                    _windowList.add(_curWindow);
+                    _records.put(maxLen,_windowList);
                 }else{
-                    value.add(curWindow);
+                    _windowList.add(_curWindow);
                 }
             }
         }
 
-        List<List<Integer>> values = records.get(maxLen);
-        System.out.println("max len = " + maxLen + ", the index =" + Arrays.toString(values.toArray()));
+        List<List<Integer>> _values = _records.get(maxLen);
+        System.out.println("max len = " + maxLen + ", the index =" + Arrays.toString(_values.toArray()));
         return maxLen;
     }
 }

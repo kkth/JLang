@@ -5,9 +5,9 @@ import java.util.*;
 public class OpenTheLock_752 {
     public static void main(String[] args){
        OpenTheLock_752 openTheLock752 = new OpenTheLock_752();
-       String[] deadends = new String[]{"0201","0101","0102","1212","2002"};
+       String[] deadEnds = new String[]{"0201","0101","0102","1212","2002"};
        String target = "0202";
-       System.out.println(openTheLock752.openLock(deadends,target));
+       System.out.println(openTheLock752.openLock(deadEnds,target));
     }
 
     public int openLock(String[] deadends, String target) {

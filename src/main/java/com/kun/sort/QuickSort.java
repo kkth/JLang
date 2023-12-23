@@ -12,22 +12,20 @@ public class QuickSort {
            return;
 
        /*
-       1.final layout:[smaller than first element, first element, bigger than first element]
-       2.to make it simple, we assume the first element belongs to smaller part
+       1.final layout:[smaller than first element ...], [first element], [... bigger than first element]
+       2.To make it simple, we assume the first element belongs to smaller part
        3.so it should be the first one of smaller part as initial value
         */
        int smallUpper = low;
        int midVal = nums[low];
 
-       for(int cur = low+1;cur<=high;cur++){
+       for(int cur = low+1 ; cur<=high ; cur++){
            if(nums[cur] < midVal) {
                swap(nums, cur, smallUpper+1);
                smallUpper++;
            }
        }
-
        swap(nums,low,smallUpper);
-
 
        quickSort(nums,low,smallUpper-1);
        quickSort(nums,smallUpper+1,high);
