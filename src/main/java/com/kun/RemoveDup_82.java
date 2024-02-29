@@ -19,9 +19,22 @@ public class RemoveDup_82 {
 
         newHead = removeDup82.deleteDuplicates(head);
         System.out.println(ListNode.pretty(newHead));
+
+        head = ListNode.createByArray(new int[]{1,2,2});
+        System.out.println(ListNode.pretty(head));
+
+        newHead = removeDup82.deleteDuplicates(head);
+        System.out.println(ListNode.pretty(newHead));
     }
 
     public ListNode deleteDuplicates(ListNode head) {
+        if(head == null){
+            return null;
+        }
+        if(head.next == null){
+            return head;
+        }
+
         ListNode cur = head;
         ListNode pending = head;
         ListNode tail = null;
@@ -47,6 +60,10 @@ public class RemoveDup_82 {
                 dupCount = 0;
             }
             cur = cur.next;
+        }
+
+        if(dupCount!=0){
+            tail.next = null;
         }
 
         return newHead;
