@@ -50,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ClimbStairs_70.executor": "Run",
     "Application.CoinChange_322.executor": "Run",
     "Application.FastPath_1976.executor": "Run",
     "Application.Fib_509.executor": "Run",
@@ -74,7 +75,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.UniqPathII_63">
+  <component name="RunManager" selected="Application.ClimbStairs_70">
+    <configuration name="ClimbStairs_70" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dp.ClimbStairs_70" />
+      <module name="JLang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kun.gen.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FastPath_1976" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kun.FastPath_1976" />
       <module name="JLang" />
@@ -94,19 +108,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kun.gen.dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QueueByStack_232" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.QueueByStack_232" />
-      <module name="JLang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClimbStairs_70" />
         <item itemvalue="Application.UniqPathII_63" />
         <item itemvalue="Application.UniqPath_62" />
         <item itemvalue="Application.Fib_509" />
         <item itemvalue="Application.FastPath_1976" />
-        <item itemvalue="Application.QueueByStack_232" />
       </list>
     </recent_temporary>
   </component>
