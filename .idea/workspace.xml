@@ -7,13 +7,6 @@
     <list default="true" id="9744b2fb-7e5f-4b31-891a-8cdd68150981" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/CoinChange_322.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/CoinChange_322.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/LongestSubStrWODuplicate_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/LongestSubStrWODuplicate_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/OpenTheLock_752.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/OpenTheLock_752.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/Stairs_70.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/Stairs_70.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/SymmetricTree_101.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/SymmetricTree_101.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/ValidParenth_20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/ValidParenth_20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/sort/QuickSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +51,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CoinChange_322.executor": "Run",
+    "Application.FastPath_1976.executor": "Run",
+    "Application.QueueByStack_232.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -65,18 +61,20 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kunhe/myproj/JLang",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.RemoveStone_1962">
-    <configuration name="Acronym_2828" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.Acronym_2828" />
+  <component name="RunManager" selected="Application.FastPath_1976">
+    <configuration name="CoinChange_322" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.CoinChange_322" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
@@ -88,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Aeiou_1641" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.stream.Aeiou_1641" />
+    <configuration name="FastPath_1976" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.FastPath_1976" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.stream.*" />
+          <option name="PATTERN" value="com.kun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.sort.QSort" />
+    <configuration name="QueueByStack_232" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.QueueByStack_232" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.sort.*" />
+          <option name="PATTERN" value="com.kun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,13 +140,20 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FastPath_1976" />
+        <item itemvalue="Application.QueueByStack_232" />
+        <item itemvalue="Application.CoinChange_322" />
         <item itemvalue="Application.RemoveStone_1962" />
         <item itemvalue="Application.MountainArray_1671" />
-        <item itemvalue="Application.Acronym_2828" />
-        <item itemvalue="Application.Aeiou_1641" />
-        <item itemvalue="Application.QSort" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -191,6 +196,17 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kun/FastPath_1976.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
