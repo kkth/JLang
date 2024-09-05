@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9744b2fb-7e5f-4b31-891a-8cdd68150981" name="Changes" comment="" />
+    <list default="true" id="9744b2fb-7e5f-4b31-891a-8cdd68150981" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +54,8 @@
     "Application.FastPath_1976.executor": "Run",
     "Application.Fib_509.executor": "Run",
     "Application.QueueByStack_232.executor": "Run",
+    "Application.UniqPathII_63.executor": "Run",
+    "Application.UniqPath_62.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -70,20 +74,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Fib_509">
-    <configuration name="CoinChange_322" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.CoinChange_322" />
-      <module name="JLang" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kun.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.UniqPathII_63">
     <configuration name="FastPath_1976" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kun.FastPath_1976" />
       <module name="JLang" />
@@ -123,12 +114,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveStone_1962" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.RemoveStone_1962" />
+    <configuration name="UniqPathII_63" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dp.UniqPathII_63" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.*" />
+          <option name="PATTERN" value="com.kun.gen.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniqPath_62" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dp.UniqPath_62" />
+      <module name="JLang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kun.gen.dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UniqPathII_63" />
+        <item itemvalue="Application.UniqPath_62" />
         <item itemvalue="Application.Fib_509" />
         <item itemvalue="Application.FastPath_1976" />
         <item itemvalue="Application.QueueByStack_232" />
-        <item itemvalue="Application.CoinChange_322" />
-        <item itemvalue="Application.RemoveStone_1962" />
       </list>
     </recent_temporary>
   </component>
