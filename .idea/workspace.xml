@@ -15,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -50,18 +51,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BinaryTreePrinter.executor": "Run",
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CoinChange_322.executor": "Run",
     "Application.FastPath_1976.executor": "Run",
     "Application.Fib_509.executor": "Run",
+    "Application.MaxAreaOfIsland_695.executor": "Run",
     "Application.QueueByStack_232.executor": "Run",
     "Application.UniqPathII_63.executor": "Run",
     "Application.UniqPath_62.executor": "Run",
+    "JUnit.BTreeUtilsTest.gen1.executor": "Run",
+    "JUnit.BTreeUtilsTest.gen2.executor": "Run",
+    "JUnit.BTreeUtilsTest.gen3.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
@@ -75,13 +83,21 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ClimbStairs_70">
-    <configuration name="ClimbStairs_70" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dp.ClimbStairs_70" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.kun.gen.dfsbfs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MaxAreaOfIsland_695">
+    <configuration name="BinaryTreePrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.BinaryTreePrinter" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dp.*" />
+          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastPath_1976" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.FastPath_1976" />
+    <configuration name="MaxAreaOfIsland_695" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.MaxAreaOfIsland_695" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.*" />
+          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,52 +118,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fib_509" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dp.Fib_509" />
+    <configuration name="BTreeUtilsTest.gen1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dp.*" />
+          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.kun.gen.dfsbfs" />
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.BTreeUtilsTest" />
+      <option name="METHOD_NAME" value="gen1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniqPathII_63" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dp.UniqPathII_63" />
+    <configuration name="BTreeUtilsTest.gen2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dp.*" />
+          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.kun.gen.dfsbfs" />
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.BTreeUtilsTest" />
+      <option name="METHOD_NAME" value="gen2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniqPath_62" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dp.UniqPath_62" />
+    <configuration name="BTreeUtilsTest.gen3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dp.*" />
+          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.kun.gen.dfsbfs" />
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.BTreeUtilsTest" />
+      <option name="METHOD_NAME" value="gen3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClimbStairs_70" />
-        <item itemvalue="Application.UniqPathII_63" />
-        <item itemvalue="Application.UniqPath_62" />
-        <item itemvalue="Application.Fib_509" />
-        <item itemvalue="Application.FastPath_1976" />
+        <item itemvalue="Application.MaxAreaOfIsland_695" />
+        <item itemvalue="JUnit.BTreeUtilsTest.gen3" />
+        <item itemvalue="JUnit.BTreeUtilsTest.gen2" />
+        <item itemvalue="JUnit.BTreeUtilsTest.gen1" />
+        <item itemvalue="Application.BinaryTreePrinter" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +232,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/kun/FastPath_1976.java</url>
           <line>120</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/kun/gen/dfsbfs/BTreeUtilsTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
