@@ -1,4 +1,6 @@
-package com.kun.gen.dfsbfs;
+package com.kun.gen.utils;
+import com.kun.gen.utils.TreeNode;
+
 import java.util.*;
 
 public class BinaryTreePrinter {

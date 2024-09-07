@@ -1,5 +1,8 @@
 package com.kun.gen.dfsbfs;
 
+import com.kun.gen.utils.BTreeUtils;
+import com.kun.gen.utils.BinaryTreePrinter;
+import com.kun.gen.utils.TreeNode;
 import org.junit.jupiter.api.Test;
 
 

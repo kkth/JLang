@@ -1,8 +1,6 @@
-package com.kun.gen.dfsbfs;
+package com.kun.gen.utils;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Deque;
+import com.kun.gen.utils.TreeNode;
 
 public class BTreeUtils {
     static TreeNode genTree(Integer[] array) {

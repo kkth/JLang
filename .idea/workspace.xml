@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9744b2fb-7e5f-4b31-891a-8cdd68150981" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/BasicArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/jlangfeatures/BasicArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/dfsbfs/BTreeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BTreeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/dfsbfs/BinaryTreePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BinaryTreePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/dfsbfs/TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kun/gen/dfsbfs/BTreeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kun/gen/dfsbfs/BTreeUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +62,15 @@
     "Application.CoinChange_322.executor": "Run",
     "Application.FastPath_1976.executor": "Run",
     "Application.Fib_509.executor": "Run",
+    "Application.FloodFill_733.executor": "Run",
+    "Application.LinkedListCycleII_142.executor": "Run",
+    "Application.LinkedListCycle_141.executor": "Run",
+    "Application.LinkedListUtil.executor": "Run",
+    "Application.ListNode.executor": "Run",
     "Application.MaxAreaOfIsland_695.executor": "Run",
+    "Application.Permute_46.executor": "Run",
     "Application.QueueByStack_232.executor": "Run",
+    "Application.TwoSum_1.executor": "Run",
     "Application.UniqPathII_63.executor": "Run",
     "Application.UniqPath_62.executor": "Run",
     "JUnit.BTreeUtilsTest.gen1.executor": "Run",
@@ -91,13 +104,13 @@
       <recent name="com.kun.gen.dfsbfs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaxAreaOfIsland_695">
-    <configuration name="BinaryTreePrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.BinaryTreePrinter" />
+  <component name="RunManager" selected="Application.LinkedListCycleII_142">
+    <configuration name="LinkedListCycleII_142" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dualpointer.LinkedListCycleII_142" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
+          <option name="PATTERN" value="com.kun.gen.dualpointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxAreaOfIsland_695" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.MaxAreaOfIsland_695" />
+    <configuration name="LinkedListCycle_141" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dualpointer.LinkedListCycle_141" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
+          <option name="PATTERN" value="com.kun.gen.dualpointer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,61 +131,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BTreeUtilsTest.gen1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.utils.LinkedListUtil" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
+          <option name="PATTERN" value="com.kun.gen.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.kun.gen.dfsbfs" />
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.BTreeUtilsTest" />
-      <option name="METHOD_NAME" value="gen1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BTreeUtilsTest.gen2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.utils.ListNode" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
+          <option name="PATTERN" value="com.kun.gen.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.kun.gen.dfsbfs" />
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.BTreeUtilsTest" />
-      <option name="METHOD_NAME" value="gen2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BTreeUtilsTest.gen3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TwoSum_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.setnmap.TwoSum_1" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
+          <option name="PATTERN" value="com.kun.gen.setnmap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.kun.gen.dfsbfs" />
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.BTreeUtilsTest" />
-      <option name="METHOD_NAME" value="gen3" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MaxAreaOfIsland_695" />
-        <item itemvalue="JUnit.BTreeUtilsTest.gen3" />
-        <item itemvalue="JUnit.BTreeUtilsTest.gen2" />
-        <item itemvalue="JUnit.BTreeUtilsTest.gen1" />
-        <item itemvalue="Application.BinaryTreePrinter" />
+        <item itemvalue="Application.LinkedListCycleII_142" />
+        <item itemvalue="Application.LinkedListCycle_141" />
+        <item itemvalue="Application.LinkedListUtil" />
+        <item itemvalue="Application.ListNode" />
+        <item itemvalue="Application.TwoSum_1" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +239,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/kun/gen/dfsbfs/BTreeUtilsTest.java</url>
-          <line>28</line>
+          <line>31</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
