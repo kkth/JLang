@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9744b2fb-7e5f-4b31-891a-8cdd68150981" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/BasicArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/jlangfeatures/BasicArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/dfsbfs/BTreeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BTreeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/dfsbfs/BinaryTreePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BinaryTreePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/dfsbfs/TreeNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kun/gen/dfsbfs/BTreeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kun/gen/dfsbfs/BTreeUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/ListNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,6 +56,8 @@
     "Application.BinaryTreePrinter.executor": "Run",
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CoinChange_322.executor": "Run",
+    "Application.ContainerMostWater_11.executor": "Run",
+    "Application.ContainsDuplicateII_219.executor": "Run",
     "Application.FastPath_1976.executor": "Run",
     "Application.Fib_509.executor": "Run",
     "Application.FloodFill_733.executor": "Run",
@@ -67,9 +65,12 @@
     "Application.LinkedListCycle_141.executor": "Run",
     "Application.LinkedListUtil.executor": "Run",
     "Application.ListNode.executor": "Run",
+    "Application.LongestSubStringWithoutDup_3.executor": "Run",
     "Application.MaxAreaOfIsland_695.executor": "Run",
     "Application.Permute_46.executor": "Run",
     "Application.QueueByStack_232.executor": "Run",
+    "Application.ReverseLinkedListII_92.executor": "Run",
+    "Application.ReverseLinkedList_206.executor": "Run",
     "Application.TwoSum_1.executor": "Run",
     "Application.UniqPathII_63.executor": "Run",
     "Application.UniqPath_62.executor": "Run",
@@ -104,13 +105,13 @@
       <recent name="com.kun.gen.dfsbfs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LinkedListCycleII_142">
-    <configuration name="LinkedListCycleII_142" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dualpointer.LinkedListCycleII_142" />
+  <component name="RunManager" selected="Application.FruitsInBuckets_904">
+    <configuration name="ContainsDuplicateII_219" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.slidewindow.ContainsDuplicateII_219" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dualpointer.*" />
+          <option name="PATTERN" value="com.kun.gen.slidewindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListCycle_141" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dualpointer.LinkedListCycle_141" />
+    <configuration name="FruitsInBuckets_904" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.slidewindow.FruitsInBuckets_904" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.dualpointer.*" />
+          <option name="PATTERN" value="com.kun.gen.slidewindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.utils.LinkedListUtil" />
+    <configuration name="NOT_PASS_ALL_LongestSubStringWithoutDup_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.slidewindow.NOT_PASS_ALL_LongestSubStringWithoutDup_3" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.utils.*" />
+          <option name="PATTERN" value="com.kun.gen.slidewindow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.utils.ListNode" />
+    <configuration name="ReverseLinkedListII_92" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.linkedlist.ReverseLinkedListII_92" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.utils.*" />
+          <option name="PATTERN" value="com.kun.gen.linkedlist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,12 +158,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.setnmap.TwoSum_1" />
+    <configuration name="ReverseLinkedList_206" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.linkedlist.ReverseLinkedList_206" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.setnmap.*" />
+          <option name="PATTERN" value="com.kun.gen.linkedlist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LinkedListCycleII_142" />
-        <item itemvalue="Application.LinkedListCycle_141" />
-        <item itemvalue="Application.LinkedListUtil" />
-        <item itemvalue="Application.ListNode" />
-        <item itemvalue="Application.TwoSum_1" />
+        <item itemvalue="Application.FruitsInBuckets_904" />
+        <item itemvalue="Application.ReverseLinkedListII_92" />
+        <item itemvalue="Application.ReverseLinkedList_206" />
+        <item itemvalue="Application.ContainsDuplicateII_219" />
+        <item itemvalue="Application.NOT_PASS_ALL_LongestSubStringWithoutDup_3" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +242,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/kun/gen/dfsbfs/BTreeUtilsTest.java</url>
           <line>31</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kun/gen/slidewindow/NOT_PASS_ALL_LongestSubStringWithoutDup_3.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
