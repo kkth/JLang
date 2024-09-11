@@ -3,7 +3,7 @@ package com.kun.gen.utils;
 import com.kun.gen.utils.TreeNode;
 
 public class BTreeUtils {
-    static TreeNode genTree(Integer[] array) {
+    public static TreeNode genTree(Integer[] array) {
         int len = array.length;
 
         TreeNode[] theNodes = new TreeNode[len];

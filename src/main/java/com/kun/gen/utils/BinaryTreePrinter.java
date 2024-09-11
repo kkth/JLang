@@ -43,7 +43,9 @@ public class BinaryTreePrinter {
         System.out.println();
 
         if (level < maxLevel) {
-            for (int i = 1; i <= edgeLines; i++) {
+            //for (int i = 1; i <= edgeLines; i++) {
+            int i = edgeLines;
+            //int i = 1;
                 for (int j = 0; j < nodes.size(); j++) {
                     printWhitespaces(firstSpaces - i);
 
@@ -68,7 +70,7 @@ public class BinaryTreePrinter {
                 }
 
                 System.out.println();
-            }
+           // }
         }
 
         printNodeInternal(newNodes, level + 1, maxLevel);

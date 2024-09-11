@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9744b2fb-7e5f-4b31-891a-8cdd68150981" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BTreeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BTreeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BinaryTreePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BinaryTreePrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -53,6 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BTreeTraverse.executor": "Run",
     "Application.BinaryTreePrinter.executor": "Run",
     "Application.ClimbStairs_70.executor": "Run",
     "Application.CoinChange_322.executor": "Run",
@@ -61,19 +66,28 @@
     "Application.FastPath_1976.executor": "Run",
     "Application.Fib_509.executor": "Run",
     "Application.FloodFill_733.executor": "Run",
+    "Application.FruitsInBuckets_904.executor": "Run",
+    "Application.LevelOrderTraverse_102.executor": "Run",
     "Application.LinkedListCycleII_142.executor": "Run",
     "Application.LinkedListCycle_141.executor": "Run",
     "Application.LinkedListUtil.executor": "Run",
     "Application.ListNode.executor": "Run",
     "Application.LongestSubStringWithoutDup_3.executor": "Run",
     "Application.MaxAreaOfIsland_695.executor": "Run",
+    "Application.MaxDepth_104.executor": "Run",
     "Application.Permute_46.executor": "Run",
     "Application.QueueByStack_232.executor": "Run",
+    "Application.QuickSort.executor": "Run",
     "Application.ReverseLinkedListII_92.executor": "Run",
     "Application.ReverseLinkedList_206.executor": "Run",
+    "Application.SortUtils.executor": "Debug",
+    "Application.SortedVowel_1641.executor": "Run",
+    "Application.TopK.executor": "Run",
+    "Application.Traverse.executor": "Run",
     "Application.TwoSum_1.executor": "Run",
     "Application.UniqPathII_63.executor": "Run",
     "Application.UniqPath_62.executor": "Run",
+    "Application.VerifyBST_98.executor": "Run",
     "JUnit.BTreeUtilsTest.gen1.executor": "Run",
     "JUnit.BTreeUtilsTest.gen2.executor": "Run",
     "JUnit.BTreeUtilsTest.gen3.executor": "Debug",
@@ -105,13 +119,13 @@
       <recent name="com.kun.gen.dfsbfs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FruitsInBuckets_904">
-    <configuration name="ContainsDuplicateII_219" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.slidewindow.ContainsDuplicateII_219" />
+  <component name="RunManager" selected="Application.VerifyBST_98">
+    <configuration name="LevelOrderTraverse_102" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.btree.LevelOrderTraverse_102" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.slidewindow.*" />
+          <option name="PATTERN" value="com.kun.gen.btree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FruitsInBuckets_904" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.slidewindow.FruitsInBuckets_904" />
+    <configuration name="MaxDepth_104" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.btree.MaxDepth_104" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.slidewindow.*" />
+          <option name="PATTERN" value="com.kun.gen.btree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NOT_PASS_ALL_LongestSubStringWithoutDup_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.slidewindow.NOT_PASS_ALL_LongestSubStringWithoutDup_3" />
+    <configuration name="SortedVowel_1641" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.backtrack.SortedVowel_1641" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.slidewindow.*" />
+          <option name="PATTERN" value="com.kun.gen.backtrack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseLinkedListII_92" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.linkedlist.ReverseLinkedListII_92" />
+    <configuration name="TopK" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.TopK" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.linkedlist.*" />
+          <option name="PATTERN" value="com.kun.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,12 +172,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseLinkedList_206" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.linkedlist.ReverseLinkedList_206" />
+    <configuration name="VerifyBST_98" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.btree.VerifyBST_98" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.linkedlist.*" />
+          <option name="PATTERN" value="com.kun.gen.btree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,20 +187,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FruitsInBuckets_904" />
-        <item itemvalue="Application.ReverseLinkedListII_92" />
-        <item itemvalue="Application.ReverseLinkedList_206" />
-        <item itemvalue="Application.ContainsDuplicateII_219" />
-        <item itemvalue="Application.NOT_PASS_ALL_LongestSubStringWithoutDup_3" />
+        <item itemvalue="Application.VerifyBST_98" />
+        <item itemvalue="Application.TopK" />
+        <item itemvalue="Application.SortedVowel_1641" />
+        <item itemvalue="Application.MaxDepth_104" />
+        <item itemvalue="Application.LevelOrderTraverse_102" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -247,6 +254,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/kun/gen/slidewindow/NOT_PASS_ALL_LongestSubStringWithoutDup_3.java</url>
           <line>24</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BinaryTreePrinter.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
