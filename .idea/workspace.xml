@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9744b2fb-7e5f-4b31-891a-8cdd68150981" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BTreeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BTreeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BinaryTreePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/utils/BinaryTreePrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BSTRangeSearch.executor": "Run",
     "Application.BTreeTraverse.executor": "Run",
     "Application.BinaryTreePrinter.executor": "Run",
     "Application.ClimbStairs_70.executor": "Run",
@@ -119,9 +118,9 @@
       <recent name="com.kun.gen.dfsbfs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.VerifyBST_98">
-    <configuration name="LevelOrderTraverse_102" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.btree.LevelOrderTraverse_102" />
+  <component name="RunManager" selected="Application.BSTRangeSearch">
+    <configuration name="BSTRangeSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.btree.BSTRangeSearch" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
@@ -187,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BSTRangeSearch" />
         <item itemvalue="Application.VerifyBST_98" />
         <item itemvalue="Application.TopK" />
         <item itemvalue="Application.SortedVowel_1641" />
         <item itemvalue="Application.MaxDepth_104" />
-        <item itemvalue="Application.LevelOrderTraverse_102" />
       </list>
     </recent_temporary>
   </component>
