@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9744b2fb-7e5f-4b31-891a-8cdd68150981" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kun/gen/dfsbfs/MaxAreaOfIsland_695.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kun/gen/dfsbfs/MaxAreaOfIsland_695.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,63 +54,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BSTRangeSearch.executor": "Run",
-    "Application.BTreeTraverse.executor": "Run",
-    "Application.BinaryTreePrinter.executor": "Run",
-    "Application.ClimbStairs_70.executor": "Run",
-    "Application.CoinChange_322.executor": "Run",
-    "Application.ContainerMostWater_11.executor": "Run",
-    "Application.ContainsDuplicateII_219.executor": "Run",
-    "Application.FastPath_1976.executor": "Run",
-    "Application.Fib_509.executor": "Run",
-    "Application.FloodFill_733.executor": "Run",
-    "Application.FruitsInBuckets_904.executor": "Run",
-    "Application.LevelOrderTraverse_102.executor": "Run",
-    "Application.LinkedListCycleII_142.executor": "Run",
-    "Application.LinkedListCycle_141.executor": "Run",
-    "Application.LinkedListUtil.executor": "Run",
-    "Application.ListNode.executor": "Run",
-    "Application.LongestSubStringWithoutDup_3.executor": "Run",
-    "Application.MaxAreaOfIsland_695.executor": "Run",
-    "Application.MaxDepth_104.executor": "Run",
-    "Application.Permute_46.executor": "Run",
-    "Application.QueueByStack_232.executor": "Run",
-    "Application.QuickSort.executor": "Run",
-    "Application.ReverseLinkedListII_92.executor": "Run",
-    "Application.ReverseLinkedList_206.executor": "Run",
-    "Application.SortUtils.executor": "Debug",
-    "Application.SortedVowel_1641.executor": "Run",
-    "Application.TopK.executor": "Run",
-    "Application.Traverse.executor": "Run",
-    "Application.TwoSum_1.executor": "Run",
-    "Application.UniqPathII_63.executor": "Run",
-    "Application.UniqPath_62.executor": "Run",
-    "Application.VerifyBST_98.executor": "Run",
-    "JUnit.BTreeUtilsTest.gen1.executor": "Run",
-    "JUnit.BTreeUtilsTest.gen2.executor": "Run",
-    "JUnit.BTreeUtilsTest.gen3.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/kunhe/myproj/JLang",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BSTRangeSearch.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BTreeTraverse.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BinaryTreePrinter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClimbStairs_70.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CoinChange_322.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ContainerMostWater_11.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ContainsDuplicateII_219.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FastPath_1976.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Fib_509.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FloodFill_733.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FruitsInBuckets_904.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LevelOrderTraverse_102.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListCycleII_142.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListCycle_141.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListUtil.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListNode.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LongestSubStringWithoutDup_3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxAreaOfIsland_695.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaxDepth_104.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Permute_46.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QueueByStack_232.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuickSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReverseLinkedListII_92.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReverseLinkedList_206.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SortUtils.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.SortedVowel_1641.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TopK.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Traverse.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TwoSum_1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UniqPathII_63.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UniqPath_62.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VerifyBST_98.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BTreeUtilsTest.gen1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BTreeUtilsTest.gen2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BTreeUtilsTest.gen3.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kunhe/myproj/JLang&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -118,7 +119,7 @@
       <recent name="com.kun.gen.dfsbfs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BSTRangeSearch">
+  <component name="RunManager" selected="Application.MaxAreaOfIsland_695">
     <configuration name="BSTRangeSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kun.gen.btree.BSTRangeSearch" />
       <module name="JLang" />
@@ -132,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxDepth_104" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kun.gen.btree.MaxDepth_104" />
+    <configuration name="MaxAreaOfIsland_695" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kun.gen.dfsbfs.MaxAreaOfIsland_695" />
       <module name="JLang" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kun.gen.btree.*" />
+          <option name="PATTERN" value="com.kun.gen.dfsbfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaxAreaOfIsland_695" />
         <item itemvalue="Application.BSTRangeSearch" />
         <item itemvalue="Application.VerifyBST_98" />
         <item itemvalue="Application.TopK" />
         <item itemvalue="Application.SortedVowel_1641" />
-        <item itemvalue="Application.MaxDepth_104" />
       </list>
     </recent_temporary>
   </component>
