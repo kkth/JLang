@@ -14,6 +14,9 @@ public class TwoSum_1 {
     }
     public int[] twoSum(int[] nums, int target) {
         int[] ret = new int[2];
+        /*
+        巧妙之处：indexMap的value是某个可用的数值的index，而key是value
+         */
         Map<Integer,Integer> indexMap = new HashMap<>();
         for(int i= 0;i<nums.length;i++){
             if(indexMap.containsKey(target-nums[i])) {
